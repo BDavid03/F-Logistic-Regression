@@ -263,4 +263,6 @@ module Runner =
         printfn "Time (ms) : %d" sw.ElapsedMilliseconds
         printfn "First 5 predictions: %A" (preds |> List.truncate 40)
 
+        // Return 0 for F# immutability
         0
+
