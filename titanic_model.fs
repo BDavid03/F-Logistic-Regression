@@ -261,7 +261,7 @@ module Runner =
         printfn "Accuracy  : %f" metrics.Accuracy
         printfn "AUC       : %f" metrics.AreaUnderRocCurve
         printfn "Time (ms) : %d" sw.ElapsedMilliseconds
-        printfn "First 5 predictions: %A" (preds |> List.truncate 40)
+        printfn "First 50 predictions: %A" (preds |> List.truncate 50)
 
         // Return 0 for F# immutability
         0
